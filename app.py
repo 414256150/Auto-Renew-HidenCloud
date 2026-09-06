@@ -69,7 +69,7 @@ def send_telegram_notification(status, old_due, new_due):
     )
     url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage"
     payload = {
-        "chat_id": chat_id,
+        "chat_id": "TG_CHAT_ID",
         "text": text,
         "parse_mode": "HTML"
     }
